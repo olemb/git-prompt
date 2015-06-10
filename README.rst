@@ -2,10 +2,10 @@ git-prompt - Minimal Git prompt
 ===============================
 
 * Shows only the essentials to keep noise down to a minimum.
+* Colors for quick assesment of the situation.
 * Very fast: written in Go and compiled to native code. Calls only one
   external command. (Two if HEAD is detached.)
-* Colors for quick assesment of the situation.
-* Works with any shell that can use call commands in a prompt.
+* Works with any shell that can call commands in a prompt.
 
 
 Installing
