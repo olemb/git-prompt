@@ -3,7 +3,7 @@ git-prompt
 
 To use just add $(git-prompt) to PS1, for example.
 
-    PS1='\u@\h:\w$(git-prompt)$ '
+    PS1='\u@\h:\w $(git-prompt)$ '
 
 Ole Martin Bjorndalen
 

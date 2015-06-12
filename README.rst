@@ -22,7 +22,7 @@ Then copy ``git-prompt`` to somewhere in your path and add this to the
 
 Here's what I use::
 
-    PS1='\u@\h:\w$(git-prompt)$ '
+    PS1='\u@\h:\w $(git-prompt)$ '
 
 
 Example Output
