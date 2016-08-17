@@ -82,4 +82,5 @@ License
 Contact
 -------
 
-Ole Martin Bjorndalen - ombdalen@uit.no
+Ole Martin Bjorndalen - ombdalen@gmail.com
+
