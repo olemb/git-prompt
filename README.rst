@@ -41,6 +41,8 @@ Example Output
 Branch Name
 -----------
 
+::
+
     master   Branch name.
     :f9a02c  Detached head. (First 6 characters of commit hash.)
     Initial  Initialized repository with nothing commited yet.
