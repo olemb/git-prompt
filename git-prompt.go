@@ -102,7 +102,7 @@ func colorText(text string, color string) string {
 		"red":    "31",
 	}
 
-	return "\001\033[" + colors[color] + "m\002" + text + "\001\033[0m\002"
+	return "\x1b[" + colors[color] + "m" + text + "\x1b[0m"
 }
 
 func formatStatus(branch string, status map[string]bool) string {
