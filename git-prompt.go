@@ -42,6 +42,10 @@ func splitIntoLines(text string) []string {
 }
 
 func getBranchName(line string) string {
+	if line == "## No commits yet on master" || line == "## Initial commit on master" {
+		return ":initial"
+	}
+
 	return strings.Split(strings.Fields(line)[1], "...")[0]
 }
 

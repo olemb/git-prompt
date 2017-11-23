@@ -35,7 +35,7 @@ Example Output
     [master ↑]    # One or more commits ahead of remote.
     [master *?]   # Changes and untracked files.
     [master *!↕]  # Unmerged conflict.
-    [Initial]     # New git repository with no commits yet.
+    [:initial]    # New git repository with no commits yet.
 
 
 Branch Name
@@ -43,9 +43,9 @@ Branch Name
 
 ::
 
-    master   Branch name.
-    :f9a02c  Detached head. (First 6 characters of commit hash.)
-    Initial  Initialized repository with nothing commited yet.
+    master    Branch name.
+    :f9a02c   Detached head. (First 6 characters of commit hash.)
+    :initial  Initialized repository with nothing commited yet.
 
 
 Status Flags
@@ -72,7 +72,7 @@ Yellow
     There are changed or untracked files.
 
 Red
-   There are conflicts that need to be resolved.
+    There are conflicts that need to be resolved.
 
 
 License
