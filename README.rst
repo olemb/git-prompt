@@ -1,27 +1,18 @@
-git-prompt - Minimal Git prompt
-===============================
+git-prompt - Minimal Git prompt for Bash
+========================================
 
-* Shows only the essentials to keep noise down to a minimum.
-* Colors for quick assesment of the situation.
-* Very fast: written in Go and compiled to native code. Calls only one
-  external command. (Two if HEAD is detached.)
-* Works with any shell that can call commands in a prompt.
+Screenshot
+----------
+
+
 
 
 Installing
 ----------
 
-First compile the program::
+Just add the Here's what I use::
 
-    $ go build git-prompt.go
-
-Then copy ``git-prompt`` to somewhere in your path and add this to the
-``PS1`` variable in your ``.bashrc`` / ``.zsh`` or other config file::
-
-    $(git-prompt)
-
-Here's what I use::
-
+    source ~/common/conf/git-prompt.sh
     PS1='\u@\h:\w $(git-prompt)$ '
 
 
