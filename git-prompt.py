@@ -15,11 +15,6 @@ License: MIT
 
 import os
 
-green = '92'
-yellow = '93'
-red = '31'
-
-
 def get_status():
     return list(os.popen('git status --porcelain=v2 --branch 2>/dev/null'))
 
@@ -64,6 +59,10 @@ def parse_status(lines):
 
 
 def format_status(branch, status):
+    green = '92'
+    yellow = '93'
+    red = '31'
+
     flags = ''
     color = green
 
