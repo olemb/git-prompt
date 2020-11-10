@@ -2,15 +2,17 @@
 """
 git-prompt
 
-To use just add $(git-prompt.py) to PS1, for example.
-
-    PS1='\u@\h:\w $(git-prompt.py)$ '
-
 Ole Martin Bjorndalen
 https://github.com/olemb/git-prompt
 
 License: MIT
 """
+#
+# To use just add $(git-prompt.py) to PS1, for example.
+# 
+#    PS1='\u@\h:\w $(git-prompt.py)$ '
+#
+
 import os
 
 green = '92'
