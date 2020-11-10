@@ -1,5 +1,13 @@
 # Git prompt for Bash
-# by Ole Martin Bjorndalen
+# 
+# To use add to (or source into) your bash config and add $(git-prompt)
+# to PS1, for example.
+# 
+#     PS1='\u@\h:\w $(git-prompt.py)$ '
+# 
+# Ole Martin Bjorndalen
+# https://github.com/olemb/git-prompt
+# 
 # License: MIT
 
 function git-prompt() {   
