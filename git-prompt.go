@@ -82,33 +82,27 @@ func parseStatus(text string) (string, map[string]bool) {
 	return branch, status
 }
 
-func colorText(text string, color string) string {
-	colors := map[string]string{
-		"green":  "92",
-		"yellow": "93",
-		"red":    "31",
-	}
-
-	return "\033[" + colors[color] + "m" + text + "\033[0m"
-}
-
 func formatStatus(branch string, status map[string]bool) string {
+	green := "92"
+	yellow := "93"
+	red := "31"
+
 	flags := ""
-	color := "green"
+	color := green
 
 	if status["changed"] {
 		flags += "*"
-		color = "yellow"
+		color = yellow
 	}
 
 	if status["untracked"] {
 		flags += "?"
-		color = "yellow"
+		color = yellow
 	}
 
 	if status["conflict"] {
 		flags += "!"
-		color = "red"
+		color = red
 	}
 
 	if status["ahead"] && status["behind"] {
@@ -123,9 +117,7 @@ func formatStatus(branch string, status map[string]bool) string {
 		flags = " " + flags
 	}
 
-	text := fmt.Sprintf("[%s%s]", branch, flags)
-
-	return colorText(text, color)
+	return fmt.Sprintf("\033[%sm[%s%s]\033[0m", color, branch, flags)
 }
 
 func main() {
