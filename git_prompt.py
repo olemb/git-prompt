@@ -91,7 +91,8 @@ def format_status(branch, status):
     return f'\033[{color}m[{branch}{flags}]\033[0m'
 
 
-lines = get_status()
-if lines != []:
-    branch, status = parse_status(lines)
-    print(format_status(branch, status), end='')
+if __name__ == '__main__':
+    lines = get_status()
+    if lines != []:
+        branch, status = parse_status(lines)
+        print(format_status(branch, status), end='')
