@@ -11,7 +11,7 @@ git-prompt - Minimal Git prompt
 There are three different implementations with identical output.
 
 * git-prompt.go - Go version (must be compiled before use)
-* git-prompt.py - Python version
+* git_prompt.py - Python version
 * git-prompt.sh - Bash function
 
 
