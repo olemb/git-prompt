@@ -38,11 +38,11 @@ Example Output
 
 ::
 
-    [master]      # At master branch with clean repository.
-    [master *]    # Uncommited changes.
-    [master ↑]    # One or more commits ahead of remote.
-    [master *?]   # Changes and untracked files.
-    [master *!↕]  # Unmerged conflict.
+    [main]        # At main branch with clean repository.
+    [main *]      # Uncommited changes.
+    [main ↑]      # One or more commits ahead of remote.
+    [main *?]     # Changes and untracked files.
+    [main *!↕]    # Unmerged conflict.
     [:initial]    # New git repository with no commits yet.
 
 
@@ -51,7 +51,7 @@ Branch Name
 
 ::
 
-    master    Branch name.
+    main      Branch name.
     :f9a02c   Detached head. (First 6 characters of commit hash.)
     :initial  Initialized repository with nothing commited yet.
 
