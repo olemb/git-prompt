@@ -42,7 +42,7 @@ Example Output
     [main *]      # Uncommited changes.
     [main ↑]      # One or more commits ahead of remote.
     [main *?]     # Changes and untracked files.
-    [main *!↕]    # Unmerged conflict.
+    [main *!]     # Unmerged conflict.
     [:initial]    # New git repository with no commits yet.
 
 
