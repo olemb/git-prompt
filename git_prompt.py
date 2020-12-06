@@ -9,7 +9,7 @@ License: MIT
 """
 #
 # To use just add $(git-prompt.py) to PS1, for example.
-# 
+#
 #    PS1='\u@\h:\w $(git-prompt.py)$ '
 #
 
@@ -47,7 +47,7 @@ def parse_status(lines):
             status['conflict'] = True
         elif char.isdigit():
             status['changed'] = True
- 
+
     if oid == '(initial)':
         branch = 'initial'
     elif head == '(detached)':
@@ -69,7 +69,7 @@ def format_status(branch, status):
     if status['changed']:
         flags += '*'
         color = yellow
-    
+
     if status['untracked']:
         flags += '?'
         color = yellow
