@@ -1,18 +1,20 @@
 # git-prompt - Minimal Git prompt
 
+![Screenshot](images/screenshot.png)
+
 * Shows only the essentials to keep noise down to a minimum.
 * Colors for quick assesment of the situation.
-* The Go and BASH versions are very fast, calling only one
-  external command.
+* Calls only one external command.
 * Go and Python versions work with any shell that can call
   commands in a prompt.
 
 There are four different implementations with identical output:
 
-* git-prompt.go - Go version (must be compiled before use.)
-* git-prompt.sh - Bash function
-* git_prompt.py - Python version
-* git_prompt.fish - Fish function (currently broken)
+* [git-prompt.go](git-prompt.go) - Go version (must be compiled before use.)
+* [git_prompt.py](git_prompt.py) - Python version
+* [git-prompt.sh](git-prompt.sh) - Bash function
+* [git_prompt.fish](git_prompt.fish) - Fish function (currently broken)
+
 
 
 ## Installing
@@ -33,7 +35,7 @@ $(git-prompt)
 Here's what I use:
 
 ```bash
-PS1='\u@\h:\w $(git-prompt)$ '
+PS1='\u@\h:\w $(git-prompt)> '
 ```
 
 
