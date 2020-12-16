@@ -11,7 +11,6 @@ grey = t.grey
 
 script = f"""\
 
-
     ~/src/super-ai {G}[main]{N}> git switch -c bugfix
     ~/src/super-ai {G}[bugfix]{N}> vi ai_matrix.js
     ~/src/super-ai {Y}[bugfix *]{N}> git commit -a -m "Matrix was upside down"

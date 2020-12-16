@@ -4,7 +4,7 @@
 
 * Shows only the essentials to keep noise down to a minimum.
 * Colors for quick assesment of the situation.
-* Calls only one external command.
+* Calls only one external command (`git status --porcelain=v2 --branch`)
 * Go and Python versions work with any shell that can call
   commands in a prompt.
 
