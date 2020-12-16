@@ -41,8 +41,8 @@ func parseStatus(text string) (string, map[string]bool) {
 	head := ""
 	branch := ""
 	status := make(map[string]bool)
-	lines := strings.Split(strings.TrimSpace(text), "\n")
 
+	lines := strings.Split(strings.TrimSpace(text), "\n")
 	for _, line := range lines {
 		char := line[0]
 		if char == '#' {
