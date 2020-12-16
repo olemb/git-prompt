@@ -22,11 +22,13 @@ def get_status():
 def parse_status(lines):
     oid = ''
     head = ''
-    status = {'ahead': False,
-              'behind': False,
-              'untracked': False,
-              'conflict': False,
-              'changed': False}
+    status = {
+        'ahead': False,
+        'behind': False,
+        'untracked': False,
+        'conflict': False,
+        'changed': False,
+    }
 
     for line in lines:
         char = line[:1]
@@ -48,9 +50,9 @@ def parse_status(lines):
             status['changed'] = True
 
     if oid == '(initial)':
-        branch = 'initial'
+        branch = ':initial'
     elif head == '(detached)':
-        branch = oid[:6]
+        branch = ':' + oid[:6]
     else:
         branch = head
 
