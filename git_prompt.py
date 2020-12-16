@@ -29,7 +29,6 @@ def parse_status(lines):
               'changed': False}
 
     for line in lines:
-        words = line.split()
         char = line[:1]
 
         if char == '#':
