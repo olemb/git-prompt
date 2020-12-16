@@ -72,9 +72,9 @@ func parseStatus(text string) (string, map[string]bool) {
 	}
 
 	if oid == "(initial)" {
-		branch = "initial"
+		branch = ":initial"
 	} else if head == "(detached)" {
-		branch = oid[:6]
+		branch = ":" + oid[:6]
 	} else {
 		branch = head
 	}
