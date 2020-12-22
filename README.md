@@ -13,8 +13,7 @@ There are four different implementations with identical output:
 * [git-prompt.go](git-prompt.go) - Go version (must be compiled before use.)
 * [git_prompt.py](git_prompt.py) - Python version
 * [git-prompt.sh](git-prompt.sh) - Bash function
-* [git_prompt.fish](git_prompt.fish) - Fish function (currently broken)
-
+* [git_prompt.fish](git_prompt.fish) - Fish function
 
 
 ## Installing

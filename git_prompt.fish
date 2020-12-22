@@ -1,11 +1,11 @@
 #
-# Currently broken version of Git Prompt for Fish.
+# Git Prompt for Fish.
 #
 #
 #
 function git_prompt
     set -l text (command git status --porcelain=v2 --branch ^/dev/null)
-    if math "$status!=0" >/dev/null
+    if [ $status -ne 0 ] >/dev/null
         return
     end
 
@@ -76,3 +76,5 @@ function git_prompt
     set_color normal
 
 end
+
+git_prompt
