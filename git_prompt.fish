@@ -76,5 +76,3 @@ function git_prompt
     set_color normal
 
 end
-
-git_prompt
